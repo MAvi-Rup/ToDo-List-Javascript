@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body{
+	background-color:#ffbe76;
+}
+
+ul{
+	list-style: none;
+	counter-reset: my-counter;
+}
+ul li{
+	width: 100%;
+	padding: 18px;
+	margin: 5px 0;
+	background:floralwhite;
+	font-size: 22px;
+	counter-increment: my-counter;
+	color: black;
+}
+ul.favourite li{
+	background:#dfe6e9;
+	
+}
+ul li::before{
+	content: counter(my-counter);
+	background: #F79F1F;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 2rem;
+	text-align: center;
+	color:floralwhite;
+	margin-right: 0.5rem;
+}
+li button{
+	float: right;
+	padding: 5px;
+	font-size: 28px;
+	line-height: 28px;
+	margin-right: 15px;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
